@@ -1,0 +1,139 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=0.5in,nofoot]{geometry}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*1}{*1}
+
+\newcommand{\entry}[4]{
+  \noindent\textbf{#1} \hfill #2 \\
+  \noindent\textit{#3} \hfill \textit{#4} \\
+  \vspace{2pt}
+}
+
+\newcommand{\project}[2]{
+  \noindent\textbf{#1} \hfill #2 \\
+  \vspace{2pt}
+}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\textbf{\Large FIRST LAST}
+
+\vspace{0.4em}
+
+\noindent \faMapMarker ~ City, Country ~ \faUser ~ AGE years old \\
+\faIdCard ~ Citizenship
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\raggedleft
+{\color{blue}} \href{https://example.com}{\faPhone \space +99 999 9999 999} \quad
+{\color{blue}} \href{mailto:email@example.com}{\faEnvelope \space email@example.com}
+
+\vspace{0.2em}
+
+{\color{blue}} \href{https://website.com}{\faGlobe \space Website} \quad
+{\color{blue}} \href{https://github.com/username}{\faGithub \space GitHub} \quad
+{\color{blue}} \href{https://linkedin.com/in/username}{\faLinkedin \space LinkedIn} \\
+\end{minipage}
+
+\vspace{0.5em}
+
+\section*{Experience}
+\vspace{0.6em}
+\entry{Company A}{\faCalendar \space Month Year -- present (\textbf{$\sim$ DURATION})}{Job Title}{\faMapMarker \space Location}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+\item Description of responsibility 1.
+\item Description of responsibility 2.
+\item Description of responsibility 3.
+\end{itemize}
+
+\entry{Company B}{\faCalendar \space Month Year -- Month Year (\textbf{$\sim$ DURATION})}{Job Title}{\faMapMarker \space Location}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+\item Description of responsibility 1.
+\item Description of responsibility 2.
+\item Description of responsibility 3.
+\end{itemize}
+
+\entry{Company C}{\faCalendar \space Month Year -- Month Year (\textbf{$\sim$ DURATION})}{Job Title}{\faMapMarker \space Location}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+\item Description of responsibility 1.
+\item Description of responsibility 2.
+\item Description of responsibility 3.
+\end{itemize}
+
+\entry{Company D}{\faCalendar \space Month Year -- Month Year (\textbf{$\sim$ DURATION})}{Job Title}{\faMapMarker \space Location}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+\item Description of responsibility 1.
+\item Description of responsibility 2.
+\item Description of responsibility 3.
+\end{itemize}
+
+\section*{Projects}
+\vspace{0.6em}
+\project{Project A | \normalfont{\textit{Technologies}}}{\textbf{Month Year}}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+\item Description of project 1.
+\item Description of project 2.
+\item Description of project 3.
+\end{itemize}
+
+\project{Project B | \normalfont{\textit{Technologies}}}{\textbf{Month Year}}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+\item Description of project 1.
+\item Description of project 2.
+\item Description of project 3.
+\end{itemize}
+
+\project{Project C | \normalfont{\textit{Technologies}}}{\textbf{Month Year}}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+\item Description of project 1.
+\item Description of project 2.
+\item Description of project 3.
+\end{itemize}
+
+\section*{Education}
+\vspace{0.6em}
+\entry{University A}{\faCalendar \space Month Year -- present (\textbf{$\sim$ DURATION})}{Degree}{\faMapMarker \space Location}
+
+\vspace{-0.6em}
+
+\entry{University B}{\faCalendar \space Month Year -- Month Year (\textbf{$\sim$ DURATION})}{Degree}{\faMapMarker \space Location}
+
+\section*{Skills}
+\vspace{0.6em}
+\item \textbf{Languages:} \textbf{Native}: Languages | \textbf{Advanced}: Languages | \textbf{Intermediate}: Languages
+\item \textbf{Technologies:} Technologies
+\item \textbf{Developer Tools:} Tools
+\item \textbf{Frameworks:} Frameworks
+
+\end{document}
